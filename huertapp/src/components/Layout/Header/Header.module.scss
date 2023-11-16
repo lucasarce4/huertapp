@@ -1,0 +1,100 @@
+@import "../../../styles/variables";
+
+.header {
+  padding: 16px 32px;
+  width: 100%;
+  min-height: 15vh;
+  background-color: $darker-complementary-color;
+  color: $white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+  }
+
+  &visited {
+    color: inherit;
+  }
+  a:after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: $dominant-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: width 0.2s ease-in-out;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: default;
+}
+
+.burgerMenuContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.burgerMenuBtn {
+  width: 30px;
+  height: 4px;
+  background-color: $white-color;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color:$white-color;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  &::before {
+    transform: translateY(-10px);
+  }
+  &::after {
+    transform: translateY(10px);
+  }
+  &.menuOpen {
+    transform: translateX(-50px);
+    background: transparent;
+
+    &::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+    &::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+  }
+}

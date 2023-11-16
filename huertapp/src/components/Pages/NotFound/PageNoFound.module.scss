@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+
+.pageNoFound{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pageNoFound h1{
+    font-size: 50px;
+    cursor: default;
+    margin-bottom: 30px;
+}
+
+.pageNoFound a{
+    color: $dominant-color;
+    background-color: $darker-complementary-color;
+    min-width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 4px;
+    border: none;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}

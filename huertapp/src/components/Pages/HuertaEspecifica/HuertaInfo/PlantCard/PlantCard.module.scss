@@ -1,0 +1,107 @@
+@import "../../../../../styles/variables";
+.displayInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid $accent-color;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.img {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+}
+
+.shortInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.details {
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  &::before {
+    content: "";
+    height: 2px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.hideDetails {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.emptyDescription {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.deleteIcon {
+  &:hover {
+    color: red;
+  }
+}
+
+.detailsIcon {
+  &:hover {
+    color: $complementary-color;
+  }
+}
+
+.editIcon {
+  &:hover {
+    animation: wiggle 0.25s infinite;
+    color: $accent-color;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-5deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}

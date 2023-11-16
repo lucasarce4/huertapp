@@ -1,0 +1,81 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.Home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 20px;
+  color: $darkGrey-color;
+  font-size: clamp(2rem, 6vw, 4rem);
+  cursor: default;
+  margin: 20px;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addButton {
+  font-size: clamp(1rem, 2vw, 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: $button-add;
+  cursor: pointer;
+  color: $dominant-color;
+  min-width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
+}
+
+.card {
+  width: 15%;
+  min-width: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px;
+  border-radius: 5px;
+  color: $white-color;
+  background-color: $darker-complementary-color;
+
+  span {
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+
+  a {
+    text-decoration: none;
+    border: 1px solid $white-color;
+    padding: 5px;
+    background-color: $darker-complementary-color;
+    border-radius: 5px;
+    color: $white-color;
+    letter-spacing: 1.2px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.emptyMsg {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin: 20px;
+}
+
+

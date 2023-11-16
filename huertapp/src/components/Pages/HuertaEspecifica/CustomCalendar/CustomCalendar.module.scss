@@ -1,0 +1,20 @@
+@import "../../../../styles/variables";
+
+.calendarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 5vh 0;
+  & .rbc-toolbar button {
+    background-color: $complementary-color;
+  }
+}
+
+.calendar {
+  border: 2px solid $complementary-color;
+  border-radius: 5px;
+  height: 500px;
+  width: 60%;
+  margin-top: 15px;
+}

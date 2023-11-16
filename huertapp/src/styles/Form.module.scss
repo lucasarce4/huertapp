@@ -1,0 +1,92 @@
+@import "./variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.formulario {
+  min-width: 600px;
+  margin-top: 50px;
+  background: $white-color;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: $lightGrey-color 0px 1px 4px;
+}
+.formulario > div {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 400;
+  color: $darkGrey-color;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select{
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid $lightGrey-color;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color:  $darkGrey-color;
+}
+
+.formulario input:focus,
+.formulario select:focus{
+  outline: none;
+  border: 2px solid $darker-complementary-color;
+}
+
+.formulario .error {
+  color: $button-delete;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #ffebee;
+  padding: 3px;
+}
+
+.formulario button[type="submit"],
+.formulario .redirectionForm{
+  display: block;
+  background: $darker-complementary-color;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease all;
+}
+
+.formulario button[type="submit"]:hover,
+.formulario .redirectionForm:hover{
+  opacity: 0.7;
+}
+
+.formulario .redirectionForm{
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+  background-color: $complementary-color;
+}
+
+.formulario .exito {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+  color: $button-add;
+}
+
+.formulario input[type="radio"] {
+  width: auto;
+}

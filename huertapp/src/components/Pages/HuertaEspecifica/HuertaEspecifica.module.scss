@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+.pageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addBtn {
+  @include button-style($complementary-color);
+}
+
+.deleteBtn {
+  @include button-style(red);
+}

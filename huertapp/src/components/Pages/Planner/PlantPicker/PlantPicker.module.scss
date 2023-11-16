@@ -1,0 +1,45 @@
+@import "../../../../styles/variables";
+
+.container {
+  margin: 10px;
+  margin-right: 0;
+  box-shadow: 0 0 2px 2px $complementary-color;
+  overflow-x: hidden;
+  background-color: $dominant-color;
+  height: 80vh;
+  align-self: center;
+}
+
+.smallContainer {
+  position: absolute;
+  height: 80vh;
+  top: 5%;
+  left: 0;
+  background-color: $dominant-color;
+  border: 2px solid $complementary-color;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.plantContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid $complementary-color;
+  margin-right: 0;
+  cursor: pointer;
+  img {
+    aspect-ratio: 1/1;
+    height: 50px;
+  }
+
+  &:hover {
+    background-color: $complementary-color;
+    color: white;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

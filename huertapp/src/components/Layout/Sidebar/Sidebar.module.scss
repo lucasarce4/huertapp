@@ -1,0 +1,70 @@
+@import "../../../styles/variables";
+
+.navMenu {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 850ms;
+  z-index: 100;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
+  background-color: lighten($darker-complementary-color, 10%);
+  color: $white-color;
+  overflow: hidden;
+}
+
+.navMenu svg path {
+  fill: white;
+  stroke: white;
+}
+
+.navMenuAbs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1;
+}
+
+.navText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.navText a {
+  text-decoration: none;
+  color: $white-color;
+  font-size: 18px;
+  width: 95%;
+  height: 130%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navText a:hover {
+  transform: scale(1.1);
+}
+
+.navText a span {
+  margin-top: 5px;
+}
+
+.navMenuItems {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

@@ -1,0 +1,92 @@
+@import "../mixins.scss";
+@import "../../../styles/variables";
+
+.registerForm {
+  @include userContainer;
+  min-width: 400px;
+  height: 420px;
+  background-color: $darker-complementary-color;
+  position: relative;
+  margin-left: 0 auto;
+}
+.campoForm {
+  text-align: left;
+  align-items: right;
+  margin-left: 7px;
+  color: $dominant-color;
+}
+.buttonContainer {
+  position: bottom;
+}
+.botonForm {
+  @include editButtons;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  margin: 10px;
+  align-items: center;
+}
+
+.botonForm:hover {
+  opacity: 0.7;
+  background-color: $complementary-color;
+  text-decoration: none;
+}
+
+.profileImage {
+  @include profileImg;
+  > * img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid transparent;
+  }
+  margin-right: 80px;
+}
+.modalContainer {
+  width: 115vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  margin: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: larger;
+  color: white;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.editInput {
+  border-radius: 5px;
+  max-width: 400px;
+  width: 360px;
+  height: 30px;
+  border: none;
+  margin-top: 3px;
+}
+.editInput:focus {
+  outline: 3px solid #00bda4;
+}
+
+.labels {
+  font-weight: bold;
+  padding: 2px;
+}

@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.footer {
+  width: 100%;
+  min-height: 10vh;
+  padding: 0 15px;
+  margin-top: auto;
+  background-color: $darker-complementary-color;
+  color: $white-color;
+  cursor: default;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}

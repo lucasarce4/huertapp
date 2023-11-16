@@ -1,0 +1,26 @@
+@import "_mixins.scss";
+@import "../../styles/variables";
+
+.userContainer {
+  @include userContainer;
+  background-color: $darker-complementary-color;
+}
+.editUser {
+  @include editButtons;
+}
+.editUser:hover {
+  opacity: 0.7;
+  background-color: $complementary-color;
+  text-decoration: none;
+}
+
+.profileImage {
+  @include profileImg;
+}
+
+.info {
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 170px;
+  color: $dominant-color;
+}

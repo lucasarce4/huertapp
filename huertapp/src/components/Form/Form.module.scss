@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.form {
+  width: 80%;
+  margin: 0 auto;
+  z-index: inherit;
+  display: flex;
+  flex-direction: inherit;
+  justify-content: center;
+}
+
+.textInput,
+.dateInput,
+form textarea,
+form input  {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid $lightGrey-color;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color:  $darkGrey-color;
+}
+
+.textInput:focus{
+  outline: none;
+  border: 2px solid $darker-complementary-color;
+}
+
+
+.label {
+  display: block;
+  font-weight: 400;
+  color: $darkGrey-color;
+  font-size: 16px;
+  margin: 10px 0;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px;
+}
+
+.btn {
+  @include button-style($complementary-color);
+  display: inline-block;
+  margin: 0 auto;
+  &:hover {
+    background-color: darken($complementary-color, 10%);
+  }
+}

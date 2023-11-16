@@ -1,0 +1,153 @@
+@import "../../styles/variables";
+
+.taskPage {
+  width: 100%;
+}
+
+.sectionTable {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px auto 50px auto;
+}
+
+.tableContainerResponsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid $darker-complementary-color;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+thead th:nth-child(3) {
+  width: 25%;
+}
+
+thead th:nth-child(4) {
+  width: 20%;
+}
+
+th,
+td {
+  padding: 16px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+  overflow: hidden;
+  height: auto;
+  max-width: 200px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tbody td img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $dominant-color;
+}
+
+tbody tr:nth-child(even) {
+  background-color: $complementary-color;
+}
+
+thead {
+  color: $dominant-color;
+}
+
+thead th {
+  background: $darker-complementary-color;
+  border: 2px solid $darker-complementary-color;
+}
+
+.msjTable {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btnAddTable,
+.btnUpdateTable,
+.btnDeleteTable,
+.btnUpdateTable,
+.btnUpdateTable a {
+  color: $dominant-color;
+  min-width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
+}
+
+.btnAddTable {
+  background-color: $button-add;
+}
+
+.btnUpdateTable {
+  background-color: $button-update;
+  padding: 0;
+  margin: 0;
+}
+
+.btnUpdateTable a {
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.btnDeleteTable {
+  background-color: $button-delete;
+}
+
+.btnAddTable:hover,
+.btnUpdateTable:hover,
+.btnDeleteTable:hover {
+  opacity: 0.7;
+}
+
+form p {
+  margin-top: 10px;
+  color: $button-delete;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTable {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionTable {
+    width: 80%;
+  }
+  td {
+    max-width: 335px;
+  }
+}

@@ -1,0 +1,18 @@
+@mixin button-style($color) {
+  border: none;
+  background-color: $color;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  color: $dominant-color;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  align-self: center;
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+}

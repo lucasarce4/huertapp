@@ -1,0 +1,16 @@
+@import "../../../../styles/variables";
+
+.slider {
+  height: 5px;
+  border-radius: 15px;
+  background-color: $complementary-color;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}

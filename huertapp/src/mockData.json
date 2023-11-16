@@ -1,0 +1,62 @@
+{
+  "huertas": [
+    {
+      "name": "Huerta1",
+      "creator": "Usuario1",
+      "users": ["Usuario2", "Usuario3"]
+    },
+    {
+      "name": "Huerta2",
+      "creator": "Usuario2",
+      "users": ["Usuario4", "Usuario5"]
+    },
+    {
+      "name": "Huerta3",
+      "creator": "Usuario3",
+      "users": ["Usuario6", "Usuario7"]
+    },
+    {
+      "name": "Huerta4",
+      "creator": "Usuario4",
+      "users": ["Usuario8", "Usuario9"]
+    }
+  ],
+
+  "calendarEvents": [
+    {
+      "id": "Huerta1",
+      "events": [
+        {
+          "title": "Prueba huerta1",
+          "start": "8/17/22",
+          "end": "8/25/22"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "events": [
+        {
+          "title": "Prueba huerta2",
+          "start": "8/19/22",
+          "end": "8/31/22"
+        },
+        {
+          "title": "Prueba huerta2",
+          "start": "9/1/22",
+          "end": "9/5/22"
+        }
+      ]
+    },
+    {
+      "id": "Huerta3",
+      "events": [
+        {
+          "title": "Prueba huerta3",
+          "start": "8/15/22",
+          "end": "8/26/22"
+        }
+      ]
+    }
+  ]
+}
